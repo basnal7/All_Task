@@ -11,6 +11,10 @@ body{
 a{
     text-decoration: none;
 }
+#logo{
+    width:100%;
+    height:auto;
+}
 .right{
     margin-bottom: 24px;
 }
@@ -57,15 +61,6 @@ a{
     border-top-right-radius: 3px;
    
     
-}
-/* heading responsive */
-@media(max-width:480px){
-    .content .heading{
-        font-size: 20px;
-    }
-    .content .pra{
-        font-size: 15px!important;
-    }
 }
 
 .content .pra{
@@ -147,70 +142,6 @@ a{
     border-color: #ac2925;
 }
 
-/* responsive red button  */
-@media(max-width:1200px){
-    .content .program a{
-        width:500px;
-        overflow: hidden;
-    white-space: nowrap; 
-    text-overflow: ellipsis ;
-
-    }
-    .content .exam a{
-        width:450px;
-        overflow: hidden;
-    white-space: nowrap; 
-    text-overflow: ellipsis ;
-     }
-}
-@media(max-width:800px){
-    .content .program a{
-        width:400px;
-        overflow: hidden;
-    white-space: nowrap; 
-    text-overflow: ellipsis ;
-
-    }
- .content .exam a{
-    width:350px;
-    overflow: hidden;
-white-space: nowrap; 
-text-overflow: ellipsis ;
- }
-}
-
-@media(max-width:600px){
-    .content .program a{
-        width:300px;
-        overflow: hidden;
-    white-space: nowrap; 
-    text-overflow: ellipsis ;
-
-    }
- .content .exam a{
-    width:250px;
-    overflow: hidden;
-white-space: nowrap; 
-text-overflow: ellipsis ;
- }
-}
-
-
-@media(max-width:400px){
-    .content .program a{
-        width:200px;
-        overflow: hidden;
-    white-space: nowrap; 
-    text-overflow: ellipsis ;
-
-    }
-    .content .exam a{
-        width:200px;
-        overflow: hidden;
-    white-space: nowrap; 
-    text-overflow: ellipsis ;
-     }
-    }
 
 .content .exam a{
     color: #000000;
@@ -246,25 +177,10 @@ text-overflow: ellipsis ;
     border-spacing: 0;
     border-collapse: collapse;
     
-    
-
-  
    
 }
 
-@media(max-width:900px){
-    .content table{
-        display: block;
-      
-        max-width: fit-content;
-        margin: 0 auto;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
   
-
-
 
 table, th, td {
 color: black;
@@ -300,9 +216,66 @@ table th{
     background-color: #31b0d5;
     border-color: #269abc;
 }
+
+
 /* table responsive  */
-@media (max-width: 900px){
+
+@media screen and (max-width: 900px){
 .table { 
     width: 100% !important;
     overflow-x: scroll; 
-}}
+}
+.content table{
+    display: block;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+}
+
+
+
+/* heading responsive */
+
+@media  screen and (max-width:480px){
+    .content .heading{
+        font-size: 20px;
+    }
+    .content .pra{
+        font-size: 15px!important;
+    }
+}
+
+
+
+    
+/* responsive red button  */
+
+@media  screen and (max-width:1200px){
+    .content .program a{
+        width:500px;
+        overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis ;
+
+    }
+    .content .exam a{
+        width:450px;
+        overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis ;
+     }
+}
+
+@media  screen and (max-width:800px){
+    .content .program a{
+        width:270px;
+       
+
+    }
+ .content .exam a{
+    width:250px;
+   
+ }
+}
